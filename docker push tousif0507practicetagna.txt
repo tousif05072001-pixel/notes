@@ -1,0 +1,9 @@
+docker push tousif0507/practice:tagname
+
+
+docker build -t tousif0507/practice:latest .
+docker push tousif0507/practice:latest
+
+ssh admin@16.176.33.52 "docker pull tousif0507/practice:latest"
+
+ssh admin@16.176.33.52 "docker service create --name prac -p 80:80 --replicas 3 tousif0507/practice:latest"
