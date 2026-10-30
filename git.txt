@@ -1,0 +1,11 @@
+git init
+
+git add .
+
+git commit -m "class project"
+
+git branch -M master
+
+git remote add origin https://github.com/tousif05072001-pixel/class.git
+
+git push -u origin master
