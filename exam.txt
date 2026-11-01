@@ -19,15 +19,14 @@ ssh admin@ip docker run --name myweb -d -p 80:80 tousif0507/myimg
 
 services:
   web1:
-    image: myimage
+    image: nginx:latest
     container_name: mycon1
     ports:
       - "80:80"
 
   web2:
-    image: myimage
+    image: httpd:latest
     container_name: mycon2
     ports:
       - "8081:80"
-
 
